@@ -7,7 +7,7 @@
     },
     "max_requests_per_user_per_second": 8,
     "ubi_credentials": {
-        "email": "",
-        "password": ""
+        "email": "${UBI_EMAIL}",
+        "password": "${UBI_PASSWORD}"
     }
 }
