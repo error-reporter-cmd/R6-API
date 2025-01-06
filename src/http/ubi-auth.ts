@@ -3,8 +3,10 @@ import config from '../configs/config.json'
 import { SaveJSONToFile } from '../utilities/file-stream'
 import { R6UserResponse } from '../utilities/interfaces/http_interfaces'
 import { UbiAppId } from '../utilities/interfaces/enums'
+require('dotenv').config();
 
-
+config.ubi_credentials.email = process.env.UBI_EMAIL;
+config.ubi_credentials.password = process.env.UBI_PASSWORD;
 
 export class UbiLoginManager {
     static instance: UbiLoginManager
